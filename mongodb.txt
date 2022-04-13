@@ -1,0 +1,3 @@
+usuario portfolio
+pass YKdsOvdMKzMOmYYw
+url mongodb+srv://portfolio:<password>@cluster0.nawlb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

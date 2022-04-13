@@ -1,0 +1,39 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "my Personal Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "backend": "nodemon server.js",
+    "frontend": "yarn start --prefix frontend ",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\" ",
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MERN",
+    "MongoDB",
+    "Express",
+    "React.js",
+    "Node.js",
+    "Fullstack"
+  ],
+  "author": "Josué Cordeiro",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.10",
+    "slug": "^5.3.0"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "devDependencies": {
+    "concurrent": "^0.3.2",
+    "concurrently": "^7.1.0"
+  }
+}
